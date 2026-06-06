@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>miTextil — Organizá tu fábrica, vendé más y mejor</title>
+  <title>miTextil | Organizá tu fábrica, vendé más y mejor</title>
   <meta name="description" content="El sistema para fábricas textiles que reemplaza WhatsApp y la memoria. Pedidos, stock, producción y caja en un solo lugar. 30 días gratis." />
   <meta property="og:title" content="miTextil — Organizá tu fábrica" />
   <meta property="og:description" content="Pedidos, stock, producción y caja en un solo lugar. 30 días gratis." />
@@ -11,7 +11,7 @@
   <link rel="icon" type="image/png" href="https://app.mitextil.com/icons/icon-192.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -30,7 +30,7 @@
     html { scroll-behavior: smooth; }
 
     body {
-      font-family: 'DM Sans', sans-serif;
+      font-family: 'Inter', sans-serif;
       background: var(--black);
       color: var(--white);
       overflow-x: hidden;
@@ -38,7 +38,7 @@
 
     /* ── LOGO WORDMARK ── */
     .logo-wordmark {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Inter', sans-serif;
       font-weight: 800;
       color: var(--white);
       text-decoration: none;
@@ -123,9 +123,9 @@
       50% { opacity: 0.3; }
     }
     .hero h1 {
-      font-family: 'Syne', sans-serif;
-      font-size: clamp(42px, 7vw, 80px);
-      font-weight: 800;
+      font-family: 'Inter', sans-serif;
+      font-size: clamp(48px, 7vw, 88px);
+      font-weight: 900;
       line-height: 1.05;
       letter-spacing: -0.03em;
       margin-bottom: 24px;
@@ -245,7 +245,7 @@
       color: var(--red); font-weight: 600; margin-bottom: 20px;
     }
     .section-title {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Inter', sans-serif;
       font-size: clamp(32px, 5vw, 52px);
       font-weight: 800; line-height: 1.1;
       letter-spacing: -0.02em; margin-bottom: 20px;
@@ -256,19 +256,24 @@
       font-weight: 300; line-height: 1.7; max-width: 600px; margin: 0 auto;
     }
     .problemas-grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 16px; margin-top: 56px; text-align: left;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      margin-top: 56px;
+      text-align: left;
     }
     .problema-card {
       background: rgba(255,255,255,0.03);
-      border: 0.5px solid rgba(255,255,255,0.07);
-      border-radius: 14px; padding: 24px;
-      transition: border-color 0.2s;
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 20px;
+      padding: 28px;
+      min-height: 230px;
+      transition: all 0.25s ease;
     }
-    .problema-card:hover { border-color: rgba(255,107,107,0.3); }
+    .problema-card:hover { border-color: rgba(255,107,107,0.35); transform: translateY(-4px); }
     .problema-icon { font-size: 28px; margin-bottom: 14px; }
-    .problema-title { font-size: 15px; font-weight: 600; margin-bottom: 8px; }
-    .problema-desc { font-size: 14px; color: rgba(255,255,255,0.45); line-height: 1.6; }
+    .problema-title { font-size: 20px; font-weight: 700; margin-bottom: 12px; }
+    .problema-desc { font-size: 16px; color: rgba(255,255,255,0.55); line-height: 1.7; }
 
     /* ── MÓDULOS ── */
     .section-modulos {
@@ -296,7 +301,7 @@
       display: flex; align-items: center; justify-content: center;
       font-size: 22px; margin-bottom: 16px;
     }
-    .modulo-title { font-family: 'Syne', sans-serif; font-size: 18px; font-weight: 700; margin-bottom: 8px; color: var(--black); }
+    .modulo-title { font-family: 'Inter', sans-serif; font-size: 18px; font-weight: 700; margin-bottom: 8px; color: var(--black); }
     .modulo-desc { font-size: 14px; color: rgba(0,0,0,0.5); line-height: 1.6; }
     .modulo-features { list-style: none; margin-top: 14px; }
     .modulo-features li {
@@ -410,7 +415,7 @@
       color: var(--red); border-color: rgba(255,107,107,0.3);
     }
     .precio-amount {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Inter', sans-serif;
       font-size: 56px; font-weight: 800;
       line-height: 1; letter-spacing: -0.04em;
       position: relative; z-index: 1;
@@ -466,7 +471,7 @@
     }
     .cta-inner { position: relative; z-index: 1; max-width: 640px; margin: 0 auto; }
     .cta-title {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Inter', sans-serif;
       font-size: clamp(36px, 6vw, 64px);
       font-weight: 800; line-height: 1.05;
       letter-spacing: -0.03em; margin-bottom: 20px;
@@ -504,6 +509,15 @@
         margin-right: auto;
       }
       .precio-card.pro { transform: none; }
+
+      .problemas-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+    }
+
+    @media (max-width: 560px) {
+      .problemas-grid { grid-template-columns: 1fr; }
     }
 
     /* ── SCROLL REVEAL ── */
