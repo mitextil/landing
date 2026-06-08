@@ -11,7 +11,7 @@
   <link rel="icon" type="image/png" href="https://app.mitextil.com/icons/icon-192.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
@@ -27,11 +27,11 @@
       --max-w: 1200px;
     }
     html { scroll-behavior: smooth; }
-    body { font-family: 'Inter', 'DM Sans', sans-serif; background: var(--black); color: var(--white); overflow-x: hidden; }
+    body { font-family: 'Inter', sans-serif; background: var(--black); color: var(--white); overflow-x: hidden; }
 
     /* ── LOGO ── */
     .logo-wordmark {
-      font-family: 'Syne', sans-serif; font-weight: 800;
+      font-family: 'Inter', sans-serif; font-weight: 800;
       color: var(--white); text-decoration: none;
       display: flex; align-items: center; gap: 10px;
       font-size: 20px;
@@ -96,7 +96,7 @@
     }
     @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
     .hero h1 {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Inter', sans-serif;
       font-size: clamp(44px, 7vw, 84px);
       font-weight: 800; line-height: 1.03; letter-spacing: -0.03em;
       margin-bottom: 24px; animation: fadeUp 0.6s ease 0.2s both;
@@ -203,7 +203,7 @@
       color: var(--red); font-weight: 600; margin-bottom: 16px;
     }
     .section-title {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Inter', sans-serif;
       font-size: clamp(32px, 5vw, 54px); font-weight: 800;
       line-height: 1.08; letter-spacing: -0.02em; margin-bottom: 16px;
     }
@@ -229,7 +229,7 @@
     }
     .problema-card:hover { border-color: rgba(255,107,107,0.3); }
     .problema-icon { font-size: 32px; line-height: 1; }
-    .problema-title { font-family: 'Syne', sans-serif; font-size: 16px; font-weight: 700; }
+    .problema-title { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 700; }
     .problema-desc { font-size: 14px; color: rgba(255,255,255,0.45); line-height: 1.65; }
 
     /* ── MÓDULOS ── */
@@ -250,7 +250,7 @@
       display: flex; align-items: center; justify-content: center;
       font-size: 22px; margin-bottom: 18px;
     }
-    .modulo-title { font-family: 'Syne', sans-serif; font-size: 18px; font-weight: 700; margin-bottom: 8px; color: var(--black); }
+    .modulo-title { font-family: 'Inter', sans-serif; font-size: 18px; font-weight: 700; margin-bottom: 8px; color: var(--black); }
     .modulo-desc { font-size: 14px; color: rgba(0,0,0,0.5); line-height: 1.6; margin-bottom: 16px; }
     .modulo-features { list-style: none; margin-top: auto; border-top: 0.5px solid rgba(0,0,0,0.06); padding-top: 14px; }
     .modulo-features li {
@@ -270,7 +270,7 @@
     }
     .quien-card:hover { background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.15); }
     .quien-emoji { font-size: 40px; margin-bottom: 14px; }
-    .quien-title { font-family: 'Syne', sans-serif; font-size: 16px; font-weight: 700; margin-bottom: 8px; }
+    .quien-title { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 700; margin-bottom: 8px; }
     .quien-desc { font-size: 14px; color: rgba(255,255,255,0.4); line-height: 1.5; }
 
     /* ── PLATAFORMAS ── */
@@ -283,7 +283,7 @@
     }
     .section-plataformas-inner { max-width: 800px; margin: 0 auto; }
     .plataformas-title {
-      font-family: 'Syne', sans-serif; font-size: 28px; font-weight: 800;
+      font-family: 'Inter', sans-serif; font-size: 28px; font-weight: 800;
       margin-bottom: 12px; letter-spacing: -0.02em;
     }
     .plataformas-sub { font-size: 16px; color: rgba(255,255,255,0.45); margin-bottom: 36px; }
@@ -299,7 +299,7 @@
     .plataforma-icon { font-size: 36px; line-height: 1; }
     .plataforma-info { text-align: left; }
     .plataforma-sub { font-size: 11px; color: rgba(255,255,255,0.4); }
-    .plataforma-name { font-family: 'Syne', sans-serif; font-size: 16px; font-weight: 700; }
+    .plataforma-name { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 700; }
     .plataforma-note { font-size: 12px; color: rgba(255,255,255,0.3); margin-top: 16px; }
 
     /* ── PRECIOS ── */
@@ -338,7 +338,7 @@
     .precio-badge.green { background: rgba(38,198,166,0.15); color: #0A7A5E; border: 0.5px solid rgba(38,198,166,0.3); }
     .precio-badge.red { background: rgba(255,107,107,0.15); color: var(--red); border: 0.5px solid rgba(255,107,107,0.3); }
     .precio-amount {
-      font-family: 'Syne', sans-serif; font-size: 60px; font-weight: 800;
+      font-family: 'Inter', sans-serif; font-size: 60px; font-weight: 800;
       line-height: 1; letter-spacing: -0.04em; margin-bottom: 6px; position: relative; z-index: 1;
     }
     .precio-amount sup { font-size: 22px; vertical-align: top; margin-top: 10px; display: inline-block; }
@@ -385,7 +385,7 @@
     }
     .cta-inner { position: relative; z-index: 1; max-width: 640px; margin: 0 auto; }
     .cta-title {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Inter', sans-serif;
       font-size: clamp(36px, 6vw, 64px); font-weight: 800;
       line-height: 1.05; letter-spacing: -0.03em; margin-bottom: 20px;
     }
@@ -488,7 +488,7 @@
         <div class="mockup-sidebar">
           <div style="display:flex;align-items:center;gap:8px;padding:8px 10px;margin-bottom:20px">
             <img src="https://app.mitextil.com/icons/icon-192.png" style="width:24px;height:24px;border-radius:50%" />
-            <span style="font-size:13px;font-weight:800;font-family:'Syne',sans-serif">mi<span style="background:linear-gradient(90deg,#FF6B6B,#9C6FD6,#42A5F5);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Textil</span></span>
+            <span style="font-size:13px;font-weight:800;font-family:'Inter',sans-serif">mi<span style="background:linear-gradient(90deg,#FF6B6B,#9C6FD6,#42A5F5);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Textil</span></span>
           </div>
           <div class="mockup-nav-item active">
             <div class="mockup-nav-dot" style="background:rgba(255,107,107,0.2)">📋</div> Pedidos
@@ -792,7 +792,7 @@
           <li>Integraciones a pedido</li>
           <li>Soporte prioritario</li>
         </ul>
-        <a href="https://wa.me/5491150945709?text=Hola%2C%20quiero%20info%20sobre%20el%20plan%20empresa%20de%20miTextil" class="precio-cta">Hablar por WhatsApp</a>
+        <a href="https://wa.me/5491100000000?text=Hola%2C%20quiero%20info%20sobre%20el%20plan%20empresa%20de%20miTextil" class="precio-cta">Hablar por WhatsApp</a>
         <p class="precio-trial">Precio según requerimientos</p>
       </div>
 
