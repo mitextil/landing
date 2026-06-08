@@ -11,7 +11,7 @@
   <link rel="icon" type="image/png" href="https://app.mitextil.com/icons/icon-192.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
@@ -27,7 +27,7 @@
       --max-w: 1200px;
     }
     html { scroll-behavior: smooth; }
-    body { font-family: 'DM Sans', sans-serif; background: var(--black); color: var(--white); overflow-x: hidden; }
+    body { font-family: 'Inter', 'DM Sans', sans-serif; background: var(--black); color: var(--white); overflow-x: hidden; }
 
     /* ── LOGO ── */
     .logo-wordmark {
@@ -419,6 +419,15 @@
       footer { padding: 24px 20px; flex-direction: column; align-items: flex-start; }
     }
 
+
+    .mf-red li::before { color: #FF6B6B; }
+    .mf-blue li::before { color: #1565C0; }
+    .mf-yellow li::before { color: #A07000; }
+    .mf-green li::before { color: #0A7A5E; }
+    .precio-features li::before { content: '✓'; font-weight: 800; font-size: 12px; flex-shrink: 0; }
+    .precio-card.free .precio-features li::before { color: #26C6A6; }
+    .precio-card.pro .precio-features li::before { color: #26C6A6; }
+    .precio-card.empresa .precio-features li::before { color: #9C6FD6; }
     /* ── SCROLL REVEAL ── */
     .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
     .reveal.visible { opacity: 1; transform: translateY(0); }
@@ -626,43 +635,43 @@
         <div class="modulo-title">Pedidos</div>
         <div class="modulo-desc">Reemplazá WhatsApp y la memoria con un sistema claro de seguimiento de cada pedido.</div>
         <ul class="modulo-features" style="--check-color:#FF6B6B">
-          <li style="color:rgba(0,0,0,0.55)"><span style="color:#FF6B6B">✓</span> Estados: presupuesto → cobrado</li>
-          <li style="color:rgba(0,0,0,0.55)"><span style="color:#FF6B6B">✓</span> Seña y saldo pendiente</li>
-          <li style="color:rgba(0,0,0,0.55)"><span style="color:#FF6B6B">✓</span> Fecha de entrega con alertas</li>
-          <li style="color:rgba(0,0,0,0.55)"><span style="color:#FF6B6B">✓</span> Búsqueda y filtros</li>
+          <li style="color:rgba(0,0,0,0.55)"> Estados: presupuesto → cobrado</li>
+          <li style="color:rgba(0,0,0,0.55)"> Seña y saldo pendiente</li>
+          <li style="color:rgba(0,0,0,0.55)"> Fecha de entrega con alertas</li>
+          <li style="color:rgba(0,0,0,0.55)"> Búsqueda y filtros</li>
         </ul>
       </div>
       <div class="modulo-card reveal">
         <div class="modulo-icon-wrap" style="background:rgba(66,165,245,0.1)">📦</div>
         <div class="modulo-title">Stock</div>
         <div class="modulo-desc">Inventario en tiempo real por ubicación — taller, feria y depósito.</div>
-        <ul class="modulo-features">
-          <li style="color:rgba(0,0,0,0.55)"><span style="color:#1565C0">✓</span> Múltiples ubicaciones</li>
-          <li style="color:rgba(0,0,0,0.55)"><span style="color:#1565C0">✓</span> Variantes por talle y color</li>
-          <li style="color:rgba(0,0,0,0.55)"><span style="color:#1565C0">✓</span> Alertas de stock mínimo</li>
-          <li style="color:rgba(0,0,0,0.55)"><span style="color:#1565C0">✓</span> Se actualiza al terminar producción</li>
+        <ul class="modulo-features mf-red">
+          <li style="color:rgba(0,0,0,0.55)"> Múltiples ubicaciones</li>
+          <li style="color:rgba(0,0,0,0.55)"> Variantes por talle y color</li>
+          <li style="color:rgba(0,0,0,0.55)"> Alertas de stock mínimo</li>
+          <li style="color:rgba(0,0,0,0.55)"> Se actualiza al terminar producción</li>
         </ul>
       </div>
       <div class="modulo-card reveal">
         <div class="modulo-icon-wrap" style="background:rgba(255,202,40,0.1)">🔧</div>
         <div class="modulo-title">Producción</div>
         <div class="modulo-desc">Órdenes de trabajo para que el taller sepa exactamente qué producir y en qué estado va.</div>
-        <ul class="modulo-features">
-          <li style="color:rgba(0,0,0,0.55)"><span style="color:#A07000">✓</span> Ligadas a pedidos o independientes</li>
-          <li style="color:rgba(0,0,0,0.55)"><span style="color:#A07000">✓</span> Progreso por ítem en tiempo real</li>
-          <li style="color:rgba(0,0,0,0.55)"><span style="color:#A07000">✓</span> Asignadas a personas del equipo</li>
-          <li style="color:rgba(0,0,0,0.55)"><span style="color:#A07000">✓</span> Stock se actualiza automáticamente</li>
+        <ul class="modulo-features mf-red">
+          <li style="color:rgba(0,0,0,0.55)"> Ligadas a pedidos o independientes</li>
+          <li style="color:rgba(0,0,0,0.55)"> Progreso por ítem en tiempo real</li>
+          <li style="color:rgba(0,0,0,0.55)"> Asignadas a personas del equipo</li>
+          <li style="color:rgba(0,0,0,0.55)"> Stock se actualiza automáticamente</li>
         </ul>
       </div>
       <div class="modulo-card reveal">
         <div class="modulo-icon-wrap" style="background:rgba(38,198,166,0.1)">💰</div>
         <div class="modulo-title">Caja</div>
         <div class="modulo-desc">Separás los ingresos y gastos del negocio de los personales, con historial completo.</div>
-        <ul class="modulo-features">
-          <li style="color:rgba(0,0,0,0.55)"><span style="color:#0A7A5E">✓</span> Categorías predefinidas</li>
-          <li style="color:rgba(0,0,0,0.55)"><span style="color:#0A7A5E">✓</span> Vista diaria, semanal y mensual</li>
-          <li style="color:rgba(0,0,0,0.55)"><span style="color:#0A7A5E">✓</span> Saldo en tiempo real</li>
-          <li style="color:rgba(0,0,0,0.55)"><span style="color:#0A7A5E">✓</span> Historial completo</li>
+        <ul class="modulo-features mf-red">
+          <li style="color:rgba(0,0,0,0.55)"> Categorías predefinidas</li>
+          <li style="color:rgba(0,0,0,0.55)"> Vista diaria, semanal y mensual</li>
+          <li style="color:rgba(0,0,0,0.55)"> Saldo en tiempo real</li>
+          <li style="color:rgba(0,0,0,0.55)"> Historial completo</li>
         </ul>
       </div>
     </div>
@@ -746,10 +755,10 @@
         <div class="precio-amount">$0</div>
         <p class="precio-desc">30 días para probar todo sin límites. Sin tarjeta de crédito.</p>
         <ul class="precio-features">
-          <li><span class="precio-check-green">✓</span> Todos los módulos</li>
-          <li><span class="precio-check-green">✓</span> Usuarios ilimitados</li>
-          <li><span class="precio-check-green">✓</span> App en el celular (PWA)</li>
-          <li><span class="precio-check-green">✓</span> Sin compromisos</li>
+          <li>Todos los módulos</li>
+          <li>Usuarios ilimitados</li>
+          <li>App en el celular (PWA)</li>
+          <li>Sin compromisos</li>
         </ul>
         <a href="https://app.mitextil.com" class="precio-cta">Empezar prueba gratis</a>
         <p class="precio-trial">Se convierte en Pro al vencer el trial</p>
@@ -762,12 +771,12 @@
         <div class="precio-amount"><sup>USD</sup>39<sub>/mes</sub></div>
         <p class="precio-desc">Un precio por negocio. Usuarios ilimitados. Todo incluido.</p>
         <ul class="precio-features">
-          <li><span class="precio-check-green">✓</span> Todos los módulos incluidos</li>
-          <li><span class="precio-check-green">✓</span> Usuarios ilimitados</li>
-          <li><span class="precio-check-green">✓</span> App en Android e iOS (PWA)</li>
-          <li><span class="precio-check-green">✓</span> Soporte por WhatsApp</li>
-          <li><span class="precio-check-green">✓</span> Actualizaciones incluidas</li>
-          <li><span class="precio-check-green">✓</span> Cancelás cuando querés</li>
+          <li>Todos los módulos incluidos</li>
+          <li>Usuarios ilimitados</li>
+          <li>App en Android e iOS (PWA)</li>
+          <li>Soporte por WhatsApp</li>
+          <li>Actualizaciones incluidas</li>
+          <li>Cancelás cuando querés</li>
         </ul>
         <a href="https://app.mitextil.com" class="precio-cta">Empezar 30 días gratis</a>
         <p class="precio-trial">Sin tarjeta · Sin contrato</p>
@@ -778,12 +787,12 @@
         <div class="precio-amount">A<br/>medida</div>
         <p class="precio-desc">Para fábricas con necesidades específicas o volumen alto.</p>
         <ul class="precio-features">
-          <li><span class="precio-check-violet">✓</span> Todo lo de Pro</li>
-          <li><span class="precio-check-violet">✓</span> Onboarding personalizado</li>
-          <li><span class="precio-check-violet">✓</span> Integraciones a pedido</li>
-          <li><span class="precio-check-violet">✓</span> Soporte prioritario</li>
+          <li>Todo lo de Pro</li>
+          <li>Onboarding personalizado</li>
+          <li>Integraciones a pedido</li>
+          <li>Soporte prioritario</li>
         </ul>
-        <a href="https://wa.me/5491150945079?text=Hola%2C%20quiero%20info%20sobre%20el%20plan%20empresa%20de%20miTextil" class="precio-cta">Hablar por WhatsApp</a>
+        <a href="https://wa.me/5491150945709?text=Hola%2C%20quiero%20info%20sobre%20el%20plan%20empresa%20de%20miTextil" class="precio-cta">Hablar por WhatsApp</a>
         <p class="precio-trial">Precio según requerimientos</p>
       </div>
 
